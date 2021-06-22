@@ -1,0 +1,41 @@
+clone means download
+repository --folder
+directory ---folder
+access means ----collaborate
+they say please give collaboration access
+for giving access go to repository in that go settings click on manage access after invite collaborator
+for rename go to settings rename change name 
+for delete repository goto setting down has delete repository
+stash memory
+------------
+temperary memory in staging area
+drop means delete
+
+
+for adding files another method
+-------------------------------
+click on repository
+click add files-->>choose file-->>write commit changes-->>click committ changes
+
+branching
+-----------
+syntax: git branch branchname
+command: git branch development
+git branch
+syntax: git checkout new branch name
+syntax: git checkout -b branch name    --->>>>branch created and enter to that branch
+
+git log
+------
+
+commands
+git log
+git log --oneline
+git log --author=auther name
+git log --author=auther mail id
+git log --author=auther name --oneline
+git log --since=year-month-date
+git log --until=year-month-date
+git log --since=year-month-date --until=year-month-date
+
+
