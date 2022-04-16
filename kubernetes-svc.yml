@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: icici1
+    app: icici
   ports:
     - port: 8080
       targetPort: 8080
