@@ -3,7 +3,7 @@ agent any
   stages {
     stage ('checkout'){
       steps{
-        git credentialsId: 'github-credentials', url: 'https://github.com/ROJAVEERA/icici-project.git'
+        git branch: 'newversion', url: 'https://github.com/ROJAVEERA/icici-project.git'
       }
     }
     stage ('build'){
