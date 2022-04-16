@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: icici-deployment
+  name: icici1-deployment
   labels:
-    app: icici
+    app: icici1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: icici
+      app: icici1
   template:
     metadata:
       labels:
-        app: icici
+        app: icici1
     spec:
       containers:
-      - name: icici-cont
+      - name: icici1-cont
         image: rojakumaridocker/icici-project-money-transfer:version
         imagePullPolicy: Always
         ports:
