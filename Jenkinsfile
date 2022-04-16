@@ -29,9 +29,9 @@ agent any
        sh "chmod +x changeTag.sh"
        sh "./changeTag.sh ${params.getDockerTag}"
         sshagent(['kubernetes-machine']) {
-          sh "scp -o StrictHostKeyChecking=no kubernetes-deploy.yml ubuntu@13.235.67.29:/home/ubuntu/"
+          sh "scp -o StrictHostKeyChecking=no kubernetes-deploy.yml kubernetes-svc.yml ubuntu@13.235.67.29:/home/ubuntu/"
           sh "ssh ubuntu@13.235.67.29 kubectl apply -f kubernetes-deploy.yml"
-         // sh "ssh ubuntu@13.235.67.29 kubectl apply -f kubernetes-svc.yml"
+          sh "ssh ubuntu@13.235.67.29 kubectl apply -f kubernetes-svc.yml"
        }       
       }
     }
